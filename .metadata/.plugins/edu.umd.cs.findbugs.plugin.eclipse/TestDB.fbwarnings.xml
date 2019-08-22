@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="1" timestamp="1566355567252" analysisTimestamp="1566355551420" release="">
+  <Project projectName="TestDB">
+    <Jar>C:\Users\internousdev\Desktop\workspace\workspace-oyama\test\TestDB\bin\TestUserDAO.class</Jar>
+    <AuxClasspathEntry>C:\Users\internousdev\Desktop\workspace\workspace-oyama\test\TestDB\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\internousdev\Desktop\mysql-connector-java-5.1.48\mysql-connector-java-5.1.48-bin.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\java\8\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\internousdev\Desktop\workspace\workspace-oyama\test\TestDB\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="TestUserDAO">
+      <SourceLine classname="TestUserDAO" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Class>
+    <Method classname="TestUserDAO" name="select" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="TestUserDAO" start="10" end="37" startBytecode="0" endBytecode="381" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="TestUserDAO" start="19" end="19" startBytecode="49" endBytecode="49" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="TestUserDAO" start="21" end="21" startBytecode="56" endBytecode="56" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="TestUserDAO" start="30" end="30" startBytecode="106" endBytecode="106" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="TestUserDAO" start="31" end="31" startBytecode="113" endBytecode="113" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="TestUserDAO" start="37" end="37" startBytecode="123" endBytecode="123" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="TestUserDAO">
+      <SourceLine classname="TestUserDAO" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Class>
+    <Method classname="TestUserDAO" name="select" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="TestUserDAO" start="10" end="37" startBytecode="0" endBytecode="381" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="TestUserDAO" start="16" end="16" startBytecode="22" endBytecode="22" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="TestUserDAO" start="17" end="17" startBytecode="29" endBytecode="29" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="TestUserDAO" start="18" end="18" startBytecode="38" endBytecode="38" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="TestUserDAO" start="19" end="19" startBytecode="47" endBytecode="47" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="TestUserDAO" start="21" end="21" startBytecode="56" endBytecode="56" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="TestUserDAO" start="30" end="30" startBytecode="106" endBytecode="106" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="TestUserDAO" start="31" end="31" startBytecode="113" endBytecode="113" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="TestUserDAO" start="37" end="37" startBytecode="123" endBytecode="123" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="TestUserDAO">
+      <SourceLine classname="TestUserDAO" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Class>
+    <Method classname="TestUserDAO" name="select" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="TestUserDAO" start="10" end="37" startBytecode="0" endBytecode="47" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1265" end="1318" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="TestUserDAO" start="16" end="16" startBytecode="22" endBytecode="22" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    <SourceLine classname="TestUserDAO" start="16" end="16" startBytecode="22" endBytecode="22" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="TestUserDAO">
+      <SourceLine classname="TestUserDAO" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Class>
+    <Field classname="TestUserDAO" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="TestUserDAO" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Field>
+    <SourceLine classname="TestUserDAO" start="7" end="7" startBytecode="7" endBytecode="7" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="TestUserDAO">
+      <SourceLine classname="TestUserDAO" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Class>
+    <Field classname="TestUserDAO" name="password" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="TestUserDAO" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+    </Field>
+    <SourceLine classname="TestUserDAO" start="8" end="8" startBytecode="13" endBytecode="13" sourcefile="TestUserDAO.java" sourcepath="TestUserDAO.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 21 Aug 2019 11:34:55 +0900" total_classes="1" referenced_classes="17" total_bugs="5" total_size="26" num_packages="1" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="17.25" clock_seconds="15.91" peak_mbytes="763.19" alloc_mbytes="910.50" gc_seconds="0.04" priority_2="5">
+    <PackageStats package="" total_bugs="5" total_types="1" total_size="26" priority_2="5">
+      <ClassStats class="TestUserDAO" sourceFile="TestUserDAO.java" interface="false" size="26" bugs="5" priority_2="5"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="747" invocations="2" avgMicrosecondsPerInvocation="373561" maxMicrosecondsPerInvocation="516111" standardDeviationMircosecondsPerInvocation="142549"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="399" invocations="357" avgMicrosecondsPerInvocation="1119" maxMicrosecondsPerInvocation="42109" standardDeviationMircosecondsPerInvocation="3073"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="373" invocations="357" avgMicrosecondsPerInvocation="1046" maxMicrosecondsPerInvocation="30415" standardDeviationMircosecondsPerInvocation="3460"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="174" invocations="61" avgMicrosecondsPerInvocation="2863" maxMicrosecondsPerInvocation="45728" standardDeviationMircosecondsPerInvocation="7734"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="159" invocations="17" avgMicrosecondsPerInvocation="9375" maxMicrosecondsPerInvocation="116753" standardDeviationMircosecondsPerInvocation="27527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="141" invocations="17" avgMicrosecondsPerInvocation="8312" maxMicrosecondsPerInvocation="60328" standardDeviationMircosecondsPerInvocation="14695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="138" invocations="17" avgMicrosecondsPerInvocation="8168" maxMicrosecondsPerInvocation="37305" standardDeviationMircosecondsPerInvocation="12102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="104" invocations="17" avgMicrosecondsPerInvocation="6134" maxMicrosecondsPerInvocation="57208" standardDeviationMircosecondsPerInvocation="13730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="82" invocations="17" avgMicrosecondsPerInvocation="4841" maxMicrosecondsPerInvocation="21420" standardDeviationMircosecondsPerInvocation="6904"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="68" invocations="35" avgMicrosecondsPerInvocation="1958" maxMicrosecondsPerInvocation="27139" standardDeviationMircosecondsPerInvocation="5722"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1566355567248" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
