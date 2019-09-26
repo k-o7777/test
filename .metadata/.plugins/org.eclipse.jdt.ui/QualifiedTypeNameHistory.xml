@@ -9,4 +9,9 @@
 <fullyQualifiedTypeName name="com.internousdev.wedproj2.util.DBConnector"/>
 <fullyQualifiedTypeName name="com.internousdev.wedproj2.dao.InquiryCompleteDAO"/>
 <fullyQualifiedTypeName name="com.internousdev.wedproj2.dao.TestDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.webproj4.util.DBConnector"/>
+<fullyQualifiedTypeName name="com.internousdev.webproj4.dto.LoginDTO"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.internousdev.webproj5.dao.InquiryCompleteDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.webproj5.util.DBConnector"/>
 </qualifiedTypeNameHistroy>
